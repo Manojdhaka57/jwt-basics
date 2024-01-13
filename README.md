@@ -8,14 +8,14 @@ Install the dependencies and devDependencies and start the server.
 
 ```sh
 git clone https://github.com/Manojdhaka57/jwt-basics.git
-npm i
 cd jwt-basics
+npm i
 npm run app
 ```
 
 # Environment Variables
 
-To use the `getAllProducts` API, you may need to set up the following environment variables:
+To use the `jwt basics` API, you may need to set up the following environment variables:
 
 - **MONGO_URI**: The URI of your MongoDB database.
 - **PORT**: The port on which the server will run (optional, default is 5000).
@@ -45,6 +45,16 @@ curl --location 'localhost:5000/api/v1/login' \
     "username": "user11",
     "password": "secret"
 }'
+```
+
+## Example Response
+
+```sh
+{
+    "success": true,
+    "msg": "User created",
+    "token": "tokenString"
+}
 ```
 
 - Methon: GET
